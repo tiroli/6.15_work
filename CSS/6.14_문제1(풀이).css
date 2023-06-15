@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header,
+main {
+    width: 600px;
+    margin: auto;
+}
+
+header>nav>ul {
+    margin-bottom: 20px;
+    background-color: darkslategray;
+    color: white;
+}
+
+header>nav>ul::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+header>nav>ul>li{
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: calc(100%/4);
+    
+    position: relative;
+}
+
+header ul ul {
+    background-color: cadetblue;
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    display: none;
+}
+
+header li {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* ================================================ */
+
+header>nav>ul>li:hover ul {
+    display: block;
+    font-size: .7em;
+}
+
+main p {
+    text-align: justify;
+    word-break: break-all;
+}
